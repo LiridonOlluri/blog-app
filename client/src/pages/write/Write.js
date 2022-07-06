@@ -38,7 +38,7 @@ export default function Write() {
       )}
       <form className="writeForm" onSubmit={handleSubmit}>
         <div className="writeFormGroup">
-          <label htmlFor="fileInput">
+          <label class="iconPlus" htmlFor="fileInput">
             <i className="writeIcon fas fa-plus"></i>
           </label>
           <input

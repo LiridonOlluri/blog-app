@@ -24,85 +24,36 @@ export default function Register() {
     }
   };
   return (
-    // <div className="register">
-    //   <span className="registerTitle">Register</span>
-    //   <form className="registerForm" onSubmit={handleSubmit}>
-    //     <label>Username</label>
-    //     <input
-    //       type="text"
-    //       className="registerInput"
-    //       placeholder="Enter your username..."
-    //       onChange={(e) => setUsername(e.target.value)}
-    //     />
-    //     <label>Email</label>
-    //     <input
-    //       type="text"
-    //       className="registerInput"
-    //       placeholder="Enter your email..."
-    //       onChange={(e) => setEmail(e.target.value)}
-    //     />
-    //     <label>Password</label>
-    //     <input
-    //       type="password"
-    //       className="registerInput"
-    //       placeholder="Enter your password..."
-    //       onChange={(e) => setPassword(e.target.value)}
-    //     />
-    //     <button className="registerButton" type="submit">
-    //       Register
-    //     </button>
-    //   </form>
-    //   <button className="registerLoginButton">
-    //     <Link className="link" to="/login">
-    //       Login
-    //     </Link>
-    //   </button>
-    //   {error && <span style={{color:"red", marginTop:"10px"}}>Exist this username or email, Try another!</span>}
-    // </div>
-
-    <div class="register-box">
-          <h2>Register</h2>
-          <form className="registerForm" onSubmit={handleSubmit}>
-      <div class="user-box">
-        <input type="text"
-               className="registerInput"
-               placeholder="Enter your username..."
-               onChange={(e) => setUsername(e.target.value)}></input>
-        <label>Username</label>
-      </div>
-      <div class="user-box">
-        <input type="text"
-               className="registerInput"
-               placeholder="Enter your email..."
-               onChange={(e) => setEmail(e.target.value)}></input>
-        <label>Email Address</label>
-      </div>
-      <div class="user-box">
-        <input  type="password"
-                className="registerInput"
-                placeholder="Enter your password..."
-                onChange={(e) => setPassword(e.target.value)}></input>
-        <label>Password</label>
-      </div>
-      
-      <button  className="registerButton" type="submit">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-            Submit
-    
-      </button>
-    </form>
-    <button className="login_button">
-         <Link className="link" to="/login">
-            Login
-         </Link>
-    </button>
-    
-              {error && <span style={{color:"red", marginTop:"10px"}}>Exist this username or email, Try another!</span>}
+ 
+  <div class="log">
+  <h2>Register</h2>
+  <form onSubmit={handleSubmit}>
+    <div class="input-cont">
+      <input  placeholder="Enter your username..." type="text" onChange={(e) => setUsername(e.target.value)} />
+      <label>Username</label>
+      <div class="border1"></div>
+    </div>
+    <div class="input-cont">
+      <input type="text" placeholder="Enter your email..." onChange={(e) => setEmail(e.target.value)} />
+      <label>Email Address</label>
+      <div class="border2"></div>
+    </div>
+    <div class="input-cont">
+    <input  placeholder="Enter your password..." type="password" onChange={(e) => setPassword(e.target.value)} />
+    <label>Password</label>
+    <div class="border1"></div>
   </div>
-  
+    <span class="check">
+      <input type="checkbox" /> <label>Remember Me</label>
+    </span>
+    <a href="#">Forgot Password</a>
+    <div class="clear"></div>
+    <input type="submit"  value="Register" />  
+    <div class="registerAcc">
+       <a href="/login">Or Login</a>
+    </div> 
+  </form>
+</div>
     
   );
 }
