@@ -1,12 +1,11 @@
 .posts{
-    flex: 9;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 20px;
+  flex: 9;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 3rem 18rem;
 }
 @media screen and (max-width: 800px) {
-    .posts {
-      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
-    }
+  .posts {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
   }
-  
+}
